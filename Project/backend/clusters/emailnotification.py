@@ -7,8 +7,8 @@ import smtplib
 def emaiNotify(receiver_email, clustername, receiver_name):
 
     #sender's credentials
-    sender_email = "spitrackv1@gmail.com"
-    sender_password = "SpTrackV1"
+    sender_email = "email"
+    sender_password = "password"
     # "\n is required to separate the message from header"
     message = "\n Hello! " + receiver_name + ", \n Your cluster: '" + clustername + "' has been created. Now, you can perform your searches. "
 
