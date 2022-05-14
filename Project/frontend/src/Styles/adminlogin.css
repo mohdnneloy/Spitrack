@@ -1,0 +1,51 @@
+/* Navbar */
+
+.a-nav-body{
+    background-color: #e05656;
+    width: 100%;
+}
+
+.a-branding{
+    margin-left: 20%;
+}
+
+.a-links{
+    margin-left: -650%;
+}
+
+
+
+/*Sign In Form*/
+
+.a-form-box{
+
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #e05656;
+    padding: 5%;
+    margin: 30% 30%;
+    margin-top: 5%;
+    
+}
+
+.a-form-head{
+    margin-left: 42%;
+    font-size: 30px;
+    padding-bottom: 20px;;
+}
+
+.form-group label, .form-group input{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.a-submit{
+    margin-top: 15px;
+    background-color: #e05656;
+    border-radius: 5px;
+    border-color: #e05656;
+    border-style: none;
+    color: white;
+    padding: 10px 20px;
+
+}

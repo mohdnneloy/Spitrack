@@ -1,0 +1,73 @@
+Depth : 1
+
+URL1 : https://www.nytimes.com/section/nyregion
+URL2 : https://www.aljazeera.com/economy/
+URL3 : https://en.wikipedia.org/wiki/Operating_system
+Crawling Strategies:
+
+PDF,
+
+Word,
+
+Text,
+
+Non-HTML Text
+
+=======================================================================
+Demonstration
+=======================================================================
+
+For Parsing Test we can use the following URL, 
+
+
+PDF: https://ec.europa.eu/info/sites/info/files/overview_of_covid19_and_roma_-_impact_-_measures_-_priorities_for_funding_-_23_04_2020.docx.pdf
+Word: https://www.internationaldisabilityalliance.org/sites/default/files/master_sgpwd_covid-19_report_-_repaired_via_365_june_22_2020.docx
+Powerpoint: https://www.stfm.org/media/2772/covid-19-residents.pptx
+Text: http://textfiles.com/news/supehack.txt
+HTML: https://www.fool.com/shop/newsletters/index.htm
+
+======================================================================
+
+Cluster Name: CNN
+
+https://edition.cnn.com/business
+https://edition.cnn.com/sport
+https://edition.cnn.com/world
+
+Depth: 3
+
+Max html less crawling time
+======================================================================
+
+Cluster Name: Aljazeera
+
+https://www.aljazeera.com/economy/
+https://www.aljazeera.com/sports/
+https://www.aljazeera.com/news/
+
+Depth: 3
+
+PDF but long crawling time
+
+======================================================================
+Cluster Name: The Daily Sun
+
+https://www.daily-sun.com/online/sports
+https://www.daily-sun.com/online/world
+https://www.daily-sun.com/online/economy
+
+Depth: 3
+
+======================================================================
+For PDFs
+
+https://paperswithcode.com/
+
+======================================================================
+Cluster Name: CBS News
+
+https://www.cbsnews.com/ukraine-crisis/
+https://www.cbsnews.com/politics/
+https://www.cbssports.com/
+
+Depth: 2

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Clusters"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clusters"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002"
+        tools:layout_editor_absoluteY="116dp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/btn_bg"
+        android:text="Create Clusters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cCrawlingStrategy" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Cluster Name :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cClusterName"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/cClusterName"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Created On :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Depth :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="URL1 :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="URL2 :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="URL3 :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Crawling Strategy :"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/cCreatedOn"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cClusterName"
+        app:layout_constraintStart_toStartOf="@+id/cClusterName"
+        app:layout_constraintTop_toBottomOf="@+id/cClusterName" />
+
+    <TextView
+        android:id="@+id/cDepth"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cCreatedOn"
+        app:layout_constraintStart_toStartOf="@+id/cCreatedOn"
+        app:layout_constraintTop_toBottomOf="@+id/cCreatedOn" />
+
+    <TextView
+        android:id="@+id/cUrl1"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cDepth"
+        app:layout_constraintStart_toStartOf="@+id/cDepth"
+        app:layout_constraintTop_toBottomOf="@+id/cDepth" />
+
+    <TextView
+        android:id="@+id/cUrl2"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cUrl1"
+        app:layout_constraintStart_toStartOf="@+id/cUrl1"
+        app:layout_constraintTop_toBottomOf="@+id/cUrl1" />
+
+    <TextView
+        android:id="@+id/cUrl3"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cUrl2"
+        app:layout_constraintStart_toStartOf="@+id/cUrl2"
+        app:layout_constraintTop_toBottomOf="@+id/cUrl2" />
+
+    <TextView
+        android:id="@+id/cCrawlingStrategy"
+        android:layout_width="270dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/cUrl3"
+        app:layout_constraintStart_toStartOf="@+id/cUrl3"
+        app:layout_constraintTop_toBottomOf="@+id/cUrl3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

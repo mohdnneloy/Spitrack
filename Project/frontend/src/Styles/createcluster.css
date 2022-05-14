@@ -1,0 +1,67 @@
+/*Create cluster form*/
+
+.form-group{
+    margin-top: 10px;;
+}
+.form-box-cluster{
+
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #00A8FF;
+    padding: 5%;
+    margin: 30% 30%;
+    margin-top: 5%;
+    
+}
+
+.form-head-cluster{
+    margin-left: 33%;
+    font-size: 30px;
+    padding-bottom: 20px;;
+}
+
+.form-group input{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 15px;
+    
+}
+
+.form-group label{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.submit{
+    margin-top: 15px;
+    background-color: #00A8FF;
+    border-radius: 5px;
+    border-color: #00A8FF;
+    border-style: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+
+.c-checkbox input{
+    margin-top: 50px;
+    
+}
+
+.c-checkbox{
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+}
+
+.c-checkbox label{
+    font-size: 17px;
+    margin-left: -25%;
+    
+}
+
+.holder{
+    margin-left: -40%;
+}

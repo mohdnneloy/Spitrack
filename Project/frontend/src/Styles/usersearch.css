@@ -1,0 +1,86 @@
+.searchbox form{
+    width: 50%;
+    border-bottom: 1px solid black ;
+    padding-bottom: 10px;
+}
+
+.btn-search{
+    background-color: #00A8FF;
+    border: 2px solid #00A8FF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    color:white;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-search:hover{
+    background-color: #002fff;
+    border: 2px solid #002fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    color:white;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .3s;
+}
+.searchbox input{
+    border-radius: 10px;
+}
+
+.s-form-group{
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+.s-form-group input{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 5px;
+    
+}
+
+.s-form-group label{
+    font-size: 20px;
+}
+
+.s-input-holder{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: wrap;
+    font-size: 5px;
+    margin-top: 10px;
+}
+
+.s-checkbox{
+    padding: 10px;
+    margin-left: 0px;
+}
+
+.s-checkbox input{
+    display: inline;
+    padding-left: 16px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+
+.s-checkbox label{
+    margin-left: 10px;
+    width: 300%;
+}
+
+.search-results{
+    font-size: 15px;
+    width: 100%
+}
+
+.search-card{
+    width: 40%
+}

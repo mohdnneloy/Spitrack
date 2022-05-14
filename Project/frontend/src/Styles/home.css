@@ -1,0 +1,50 @@
+/* Navbar */
+
+.nav-body{
+    background-color: #00A8FF;
+    width: 100%;
+}
+
+.branding{
+    
+    text-decoration: none;
+    color: white;
+    padding-top: 20;
+}
+
+.navbar-nav{
+    margin-left: 55%;
+}
+
+.image{
+    margin-left: 50%;
+    margin-top: -18%;
+}
+
+img{
+    width: 60%;
+}
+
+.content{
+    width: 75%;
+}
+
+.txtlogosec{
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    padding-top: 5%;
+
+    width: 30%;
+    margin-left: 20%;
+    margin-top: 11%;
+}
+
+.txtlogosec h2{
+    font-size: 5em;
+}
+
+.txtlogosec h4{
+    padding-left: 25%;
+}
+
+

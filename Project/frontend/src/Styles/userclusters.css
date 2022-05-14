@@ -1,0 +1,86 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00A8FF;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+
+  .sidenav button{
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  
+  .sidenav a:hover {
+    color: rgb(0, 39, 90);
+  }
+  
+  .main {
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    margin-top: 80px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+  .createcluster a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .cards{
+    width: 100%;
+    font-size: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap:wrap;
+    margin-left: -10px;
+
+  }
+
+  .card{
+    margin: 20px;
+    width: 30%;
+  }
+
+  .body2{
+    
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-wrap:wrap;
+  }
+
+  .body2 p{
+    margin-left: 5px;
+  }
+
+  .card-text b{
+    color: #850073;
+    font-weight: 200;
+  }

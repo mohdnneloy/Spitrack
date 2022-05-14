@@ -1,0 +1,40 @@
+/* Navbar */
+
+
+
+
+/*Sign In Form*/
+
+.n-form-box{
+
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #e05656;
+    padding: 5%;
+    margin: 30%;
+    margin-top: 5%;
+    
+}
+
+.n-form-head{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;;
+}
+
+.form-group label, .form-group input{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.n-submit{
+    margin-top: 15px;
+    background-color: #e05656;
+    border-radius: 5px;
+    border-color: #e05656;
+    border-style: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+
+}

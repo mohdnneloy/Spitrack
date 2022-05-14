@@ -1,0 +1,1228 @@
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRS Team Eccentric</title>
+
+    <!--Smooth Scroll Between HTML Sections-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 500, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
+
+    <!-- Style Section CSS-->
+
+    <style>
+
+        /*======================= Google Fonts Import ========================*/
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap');
+        
+        /*=========================== All Components =====================*/
+
+        *{
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'PT Sans', sans-serif;
+        }
+        body{
+            background-color: #ffffff;
+        }
+        h1{
+            color: #000dc9;
+        }
+        h2{
+            
+            color: #00A8FF;
+        }
+        h3{
+            color: black;
+        }
+
+        /*====================== Side-Navbar Design ======================*/
+        
+            .Table-content{
+                color:white;
+            }
+            ol {
+            counter-reset: item;
+            }
+
+            ol > li {
+            counter-increment: item;
+            }
+
+            ol ol > li {
+            display: block;
+            }
+
+            ol ol > li:before {
+                content: counters(item, ".") ". ";
+                margin-left: -20px;
+
+                display: inline-block;
+        }
+        
+            
+            .sidenav {
+            height: 100%;
+            width: 500px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #00A8FF;
+            overflow-x: hidden;
+            padding-top: 20px;
+            color: white;
+            padding: 20px;
+            float: left;
+            }
+
+            .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            }
+
+            .sidenav a:hover {
+            color: #0023be;
+            }
+
+            .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            .content {width: 60%}
+            }
+
+            .sidenav h1{
+                font-size: 25px;
+                margin-top: -20px
+            }
+
+            ol .subpoints a{
+                font-size: 15px;
+            }
+            
+            ol .subpoints{
+                font-size: 15px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .section{
+                border-top: solid 1px white;
+                border-bottom: solid 1px white;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            /*====================== Content Box Design ======================*/
+
+            
+             @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+            }
+
+            @media only screen and (min-width: 1800px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            }
+
+
+            .content{
+                float: right;
+                margin-left: 23%;
+                padding-left: 30px;
+                margin: 0px;
+     
+            }
+
+            .point{
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+                width: 75%;
+                padding: 25px;
+                margin-left: 10%;
+            }
+
+            /*====================== Table Design ======================*/
+
+            table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+        
+   
+    </style>
+
+
+    <!--Print Layout CSS-->
+
+    <style media="screen">
+        .hide-on-screen {display:none;}
+        .yesPrint, .noPrint {display:block;}
+
+        @media print {
+        .noPrint {display:none;}
+        .hide-on-screen {display:block;}
+        }
+    </style>
+
+    <style>
+
+        @media print {
+            .hidden-print {
+                display: none !important;
+            }
+        }
+
+        /*================== Table Content Print Section Design ==========================*/
+
+        .vcontent{
+            color: #0023be;
+            margin-left: 10%
+        }
+
+        .vcontent a, .vcontent li, .vcontent h1{
+            color: #0023be;
+            text-decoration: none;
+        }
+
+        .vcontent .section{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .vcontent .vi, .vcontent .vi a{
+            color: #00A8FF;
+        }
+
+        .vmcontent{
+            text-align: right;
+            list-style:none;
+            width: 75%;
+        }
+        
+        .vsection{
+            margin-left: 5%;
+        }
+
+     /* ==================== Print Button Design ========================*/
+
+         .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color: #00A8FF;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+        .float:hover{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color: #000ed3;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            box-shadow: 2px 2px 3px #999;
+        }
+
+        .my-float{
+            margin-top:22px;
+        }
+
+
+  </style>
+
+
+</head>
+
+<body>
+
+    <!--Side Navbar Visible but not Printable-->
+
+    <div class="sidenav hidden-print" >
+
+        <a href="#point-1"><h1 class="Table-content">Table of Contents</h1></a>
+
+        <ol type = "1">
+
+            <li class = "section">
+                <a href="#point-1">Introduction</a>
+                <ol class = "subpoints">
+                    <li><a href="#subpoint1-1">Purpose</a></li>
+                    <li><a href="#subpoint1-2">Document Conventions</a></li>
+                    <li><a href="#subpoint1-3">Intended Audience and Reading Suggestions</a></li>
+                    <li><a href="#subpoint1-4">Product Scope</a></li>
+                    <li><a href="#subpoint1-5">References</a></li>  
+                </ol>
+
+            </li>
+
+            <li class = "section">
+                <a href="#point-2">Overall Description</a>
+                <ol class = "subpoints">
+                    <li><a href="#subpoint2-1">Product Perspective</a></li>
+                    <li><a href="#subpoint2-2">Product Functions</a></li>
+                    <li><a href="#subpoint2-3">User Classes and Characteristics</a></li>
+                    <li><a href="#subpoint2-4">Operating Environment</a></li>
+                    <li><a href="#subpoint2-5">Design and Implementation Constraints</a></li>
+                    <li><a href="#subpoint2-6">User Documentation</a></li>   
+                    <li><a href="#subpoint2-7">Assumptions and Dependencies</a></li>  
+                </ol>
+
+            </li>
+
+            <li class = "section">
+                <a href="#point-3">External Interface Requirements</a>
+                <ol class = "subpoints">
+                    <li><a href="#subpoint3-1">User Interfaces</a></li>
+                    <li><a href="#subpoint3-2">Hardware Interfaces</a></li>
+                    <li><a href="#subpoint3-3">Software Interfaces</a></li>
+                    <li><a href="#subpoint3-4">Communication Interfaces</a></li>  
+                </ol>
+
+            </li>
+
+            <li class = "section">
+                <a href="#point-4">System Features</a>
+                <ol class = "subpoints">
+                    <li><a href="#subpoint4-1">User Sign Up With or Without Google Authentication</a></li>
+                    <li><a href="#subpoint4-2">Create Cluster of URLS or COUs</a></li>
+                    <li><a href="#subpoint4-3">View or Delete clusters already created</a></li>
+                    <li><a href="#subpoint4-4">Perform Search Operation</a></li>
+                    <li><a href="#subpoint4-5">Add New Crawling Strategy through Plug-In</a></li>  
+                </ol>
+
+            </li>
+
+            <li class = "section">
+                <a href="#point-5">Other Non-Functional Requirements</a>
+                <ol class = "subpoints">
+                    <li><a href="#subpoint5-1">Performance Requirements</a></li>
+                    <li><a href="#subpoint5-2">Safety Requirements</a></li>
+                    <li><a href="#subpoint5-3">Security Requirements</a></li>
+                    <li><a href="#subpoint5-4">Software Quality Attributes</a></li>
+                    <li><a href="#subpoint5-5">Business Rules</a></li>  
+                </ol>
+
+            </li>
+
+            <li class="section"><a href="#point-6">Other Requirements</a></li>
+            <li class="section"><a href="#appendix-a">Appendix A: Glossary</a></li>
+            <li class="section"><a href="#appendix-b">Appendix B: Analysis Models</a></li>
+            <li class="section"><a href="#appendix-c">Appendix C: To Be Determined List</a></li>
+        </ol>
+    </div>
+
+    <!--Main Content-->
+
+    <div class="col-9 col-s-8 content print-container">
+
+        <!--This content only printable not visible (Main Page)-->
+
+        <div class="vcontent vmcontent hide-on-screen">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Software Requirements Specification</h1>
+            <h2>for</h2>   
+            <h1>Project Spitrack</h1>
+            <h4 style="color: #00A8FF">Version 1.0 Approved</h4>
+            <br>
+            <br>
+            <br>
+            
+            <h4>Prepared by:</h4>
+                <li style="color: #00A8FF">Mohammad Nabiluzzaman Neloy</li>
+                <li style="color: #00A8FF">Mohammad Newaz Sharif Rafi</li>
+                <li style="color: #00A8FF">Rafid Ahmed</li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Eccentrics</h2>
+            <h3 style="color: #0023be">November 8, 2021</h3>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+        <br>
+
+        <!--This content is only printable but not visible (Table Of Content)-->
+
+        <div class="vcontent hide-on-screen">
+            
+            <a href="#point"><h1 class="Table-content">Table of Contents</h1></a>
+
+            <ol type = "1">
+
+                <li class = "section">
+                    <a href="#point-1">Introduction ............................................................................................... 3</a>
+                    <ol class = "subpoints">
+                        <li class="vi"><a href="#subpoint1-1">  Purpose ......................................................................................... 3</a></li>
+                        <li class="vi"><a href="#subpoint1-2">  Document Conventions .................................................................. 3</a></li>
+                        <li class="vi"><a href="#subpoint1-3">  Intended Audience and Reading Suggestions ................................. 4</a></li>
+                        <li class="vi"><a href="#subpoint1-4">  Product Scope ............................................................................... 4</a></li>
+                        <li class="vi"><a href="#subpoint1-5">  References ..................................................................................... 4</a></li>  
+                    </ol>
+
+                </li>
+
+                <li class = "section">
+                    <a href="#point-2">Overall Description ..................................................................................... 5</a>
+                    <ol class = "subpoints">
+                        <li class="vi"><a href="#subpoint2-1">  Product Perspective .................................................................... 5</a></li>
+                        <li class="vi"><a href="#subpoint2-2">  Product Functions ...................................................................... 5</a></li>
+                        <li class="vi"><a href="#subpoint2-3">  User Classes and Characteristics ................................................. 5</a></li>
+                        <li class="vi"><a href="#subpoint2-4">  Operating Environment .............................................................. 6</a></li>
+                        <li class="vi"><a href="#subpoint2-5">  Design and Implementation Constraints ..................................... 6</a></li>
+                        <li class="vi"><a href="#subpoint2-6">  User Documentation ................................................................. 6</a></li>   
+                        <li class="vi"><a href="#subpoint2-7">  Assumptions and Dependencies ................................................ 7</a></li>  
+                    </ol>
+
+                </li>
+
+                <li class = "section">
+                    <a href="#point-3">External Interface Requirements ................................................................. 7</a>
+                    <ol class = "subpoints">
+                        <li class="vi"><a href="#subpoint3-1">  User Interfaces ................................................................ 7</a></li>
+                        <li class="vi"><a href="#subpoint3-2">  Hardware Interfaces ...................................................... 11</a></li>
+                        <li class="vi"><a href="#subpoint3-3">  Software Interfaces ....................................................... 11</a></li>
+                        <li class="vi"><a href="#subpoint3-4">  Communication Interfaces ............................................. 11</a></li>  
+                    </ol>
+
+                </li>
+
+                <li class = "section">
+                    <a href="#point-4">System Features ...................................................................................... 11</a>
+                    <ol class = "subpoints">
+                        <li class="vi"><a href="#subpoint4-1">  User Sign Up With or Without Google Authentication ......... 11</a></li>
+                        <li class="vi"><a href="#subpoint4-2">  Create Cluster of URLS or COUs ......................................... 12</a></li>
+                        <li class="vi"><a href="#subpoint4-3">  View or Delete clusters already created ............................. 13</a></li>
+                        <li class="vi"><a href="#subpoint4-4">  Perform Search Operation .................................................. 14</a></li>
+                        <li class="vi"><a href="#subpoint4-5">  Add New Crawling Strategy through Plug-In ...................... 14</a></li>  
+                    </ol>
+
+                </li>
+
+                <li class = "section">
+                    <a href="#point-5">Other Non-Functional Requirements ........................................................ 15</a>
+                    <ol class = "subpoints">
+                        <li class="vi"><a href="#subpoint5-1">  Performance Requirements ......................................... 15</a></li>
+                        <li class="vi"><a href="#subpoint5-2">  Safety Requirements ................................................... 16</a></li>
+                        <li class="vi"><a href="#subpoint5-3">  Security Requirements ................................................ 16</a></li>
+                        <li class="vi"><a href="#subpoint5-4">  Software Quality Attributes ........................................ 16</a></li>
+                        <li class="vi"><a href="#subpoint5-5">  Business Rules ........................................................... 17</a></li>  
+                    </ol>
+
+                </li>
+            </ol>
+
+            <a class="vsection" style="color: #0023be" href="#point-6">Other Requirements .................................................................................... 17</a>
+            <br>
+            <br>
+            <a class="vsection" href="#appendix-a" style="color: #0023be">Appendix A: Glossary ................................................................................... 17</a>
+            <br>
+            <br>
+            <a class="vsection" href="#appendix-b" style="color: #0023be">Appendix B: Analysis Models ...................................................................... 18</a>
+            <br>
+            <br>
+            <a class="vsection" href="#appendix-c" style="color: #0023be">Appendix C: To Be Determined List .............................................................. 19</a>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <!--Visible and Printable Content-->
+        
+        <div id=point-1 class = point>
+            <h1>1. Introduction</h1>
+
+            <div id="subpoint1-1" class="subpoint1-1">
+                <h2>1.1 Pupose</h2>
+                <p>Spitrack is a web based search engine that uses crawling
+                   and scraping strategies to search some specific content 
+                   out of a given cluster of URLs (Unified Resource Locator). 
+                   The application is mainly focused on simplifying research 
+                   strategies for researchers. In addition to the web-app, 
+                   a mobile-app is a complementary option to facilitate the 
+                   searching capability through portable methods. The search 
+                   can be done over some scrapped data on a central server 
+                   that has been retrieved from a given set of clusters created by a user. 
+                </p>
+            </div>
+
+            <div id="subpoint1-2" class="subpoint1-2">
+                <h2>1.2 Document Conventions</h2>
+                <table>
+                    <tr>
+                        <th>Document Conventions</th>
+                        <th>Use</th>
+                    </tr>
+                    <tr>
+                        <td>ORM</td>
+                        <td>Object Relational Mapping</td>
+                    </tr>
+                    <tr>
+                        <td>DBMS</td>
+                        <td>Database Management System</td>
+                    </tr>
+                    <tr>
+                        <td>API</td>
+                        <td>Application Programming Interface</td>
+                    </tr>
+                    <tr>
+                        <td>REST</td>
+                        <td>Representational State Transfer</td>
+                    </tr>
+                    <tr>
+                        <td>SRS</td>
+                        <td>Software Requirements Specification</td>
+                    </tr>
+                    <tr>
+                        <td>REACT</td>
+                        <td>Front-End Javascript Library</td>
+                    </tr>
+                    <tr>
+                        <td>DJANGO</td>
+                        <td>Back-End Python Framework</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Structured Query Language</td>
+                    </tr>
+                    <tr>
+                        <td>COU</td>
+                        <td>Cluster of URLs</td>
+                    </tr>
+                    <tr>
+                        <td>WCS</td>
+                        <td>Object Relational Mapping</td>
+                    </tr>
+                    <tr>
+                        <td>PII</td>
+                        <td>Plugin Installer</td>
+                    </tr>
+                    <tr>
+                        <td>DOM</td>
+                        <td>Document Object Model</td>
+                    </tr>
+                    <tr>
+                        <td>CRUD</td>
+                        <td>Create Read Update and Delete</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div id="subpoint1-3" class="subpoint1-3">
+                <h2>1.3 Intended Audience and Reading Suggestions</h2>
+                <p>This SRS follows the basic requirements for the development of the Spitrack 
+                    System Prototype. Project Managers, Developers, Testers, Documentation 
+                    Writers and Users of the system are suggested to go through some specific 
+                    sections of this SRS thoroughly.
+                    <br>
+                    <br>
+                    <i>Project Managers</i> - Sections: 1.4, 1.5, 2.3, 2.4, 3.1, 3.3, 3.4, 4, 5.5, 6
+                    <br>
+                    <i>Developers</i> - Sections: 1.1, 2.2-2.5, 3.1, 3.3, 3.5, 5.1-5.4, 6
+                    <br>
+                    <i>Testers</i> - Sections: 2.2-2.5, 3.1, 3.3, 3.5, 4
+                    <br>
+                    <i>Documentation Writers</i> - Section: 2.6
+                    <br>
+                    <i>Users</i> - Sections: 1.1, 1.4. 2.6, 3.1, 5.1-5.4, 6</p>
+
+            </div>
+
+            <div id="subpoint1-4" class="subpoint1-4">
+                <h2>1.4 Product Scope</h2>
+                <p>Spitrack is focused on the simplification of research. It gives the users the 
+                    ability to form clusters of URLs with some specified crawling and scraping 
+                    strategies. A researcher who is focused on an individual research can use 
+                    the URL links of his preference to search some content only within those 
+                    links and the ones that are present inside it. Users within this system will 
+                    have the ability to create clusters and search within the created clusters. 
+                    Also, the admins will have the ability to add crawling strategies to the system 
+                    by just installing them as plugins. They can later on activate or deactivate 
+                    the crawling strategy for the users of this system. The main objective of this 
+                    system is to provide a better and easier procedure to search content for an 
+                    optimal research document. This SRS will provide the required information for 
+                    the development of the complete or partial component of the whole system. 
+                </p>
+
+            </div>
+
+            <div id="subpoint1-5" class="subpoint1-5">
+                <h2>1.5 References</h2>
+                <ul style="list-style-type:square;">
+                    <li>Krüger, Nico. “How to Write a Software Requirements Specification (SRS <br>Document).” <i>Perforce</i>, Perforce, 23 10 2018, 
+                    <a href="https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document">
+                    https://www.perforce.com/blog/alm/how-write-software-requirements-specification-srs-document</a>.</li>
+                    <br>
+                    <br>
+
+                    <li>Burak, Andrew. “Your 2022 Guide to Writing a Software Requirements Specification 
+                    (SRS) Document.” <i>Relevant</i>, Relevant, <a href="https://relevant.software/blog/software-requirements-specification-srs-document/">
+                    https://relevant.software/blog/software-requirements-specification-srs-document/</a>.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id=point-2 class = point>
+            <h1>2. Overall Description</h1>
+
+            <div id="subpoint2-1" class="subpoint2-1">
+                <h2>2.1 Product Perspective</h2>
+                <p>The product Spitrack is about simplifying search methodologies. 
+                    It will help users to search to the point, without going 
+                    through the hassle of searching multiple web pages. Users are 
+                    going to create and use search clusters.This product is different 
+                    from regular search engines in respect of the scope of searching, 
+                    Spitrack will search on the created clusters, whereas others will 
+                    search through the whole web. This is a completely new system 
+                    that doesn't have any dependencies on subsystems of the super-systems. 
+                </p>
+            </div> 
+            
+            <div id="subpoint2-2" class="subpoint2-2">
+                <h2>2.2 Product Functions</h2>
+                <ul style="list-style: disc;">
+                    <li>Create search cluster</li>
+                    <ul style="list-style: circle;">
+                        <li>Make cluster of URLs</li>
+                        <li>Select a crawling strategy</li>
+                        <ul style="list-style:square;">
+                            <li>All contexts (textual)</li>
+                            <li>Only txt files</li>
+                            <li>Only HTML files</li>
+                            <li>Only PDF files</li>
+                            <li>Only MS Word files</li>
+                            <li>Give a maximum depth to crawl</li>
+                        </ul>
+                        <li>Select COU during search</li>
+                        <li>Search files and filter results out of scrapped content</li>
+                    </ul>
+                    <li>Search using Voice Command (Mobile App)</li>
+                    <ul style="list-style: circle;">
+                        <li>Search using voice command through the mobile application</li>
+                    </ul>
+                    <li>Admin Management</li>
+                    <ul style="list-style: circle;">
+                        <li>Add new crawling strategies as Plugin</li>
+                        <li>Activate or Deactivate Crawling strategy</li>
+                    </ul>
+                    <li>System Management</li>
+                    <ul style="list-style: circle;">
+                        <li>Identify cluster formation</li>
+                        <li>Send email notifications</li>
+                        <li>Provide recent search suggestions</li>
+                        <li>Provide info about available COUs</li>
+                    </ul>
+                        <li>Backup and Recovery</li>
+                    </ul>    
+            </div>
+
+            <div id="subpoint2-3" class="subpoint2-3">
+                <h2>2.3 User Classes and Characteristics</h2>
+                <ul style="list-style: disc;">
+                    <li>User</li>
+                     <ul style="list-style: circle;">
+                        <li>Account creation, Sign In and Sign Out</li>
+                        <li>Make COUs</li>
+                        <li>Select crawling strategies</li>
+                        <li>Search within the clusters</li>
+                        <li>Get notifications via email</li>
+                     </ul>
+                     <li>Admin</li>
+                     <ul style="list-style: circle;">
+                        <li>Admin account creation Sign In, Sign Out</li>
+                        <li>Add crawling strategies</li>
+                        <li>Add new crawling strategies as plugin</li>
+                        <li>Activate/Deactivate crawling strategies</li>
+                     </ul>
+                     <li>System</li>
+                     <ul style="list-style: circle;">
+                        <li>Send Email notifications</li>
+                        <li>Identify cluster formation</li>
+                     </ul>
+                </ul>
+            </div>
+
+            <div id="subpoint2-4" class="subpoint2-4">
+                <h2>2.4 Operating Environment</h2>
+                <ul style="list-style: disc;">
+                    <li>Software Components</li>
+                     <ul style="list-style: circle;">
+                        <li>Operating system: Windows 7-11</li>
+                        <li>Frontend Platform: React</li>
+                        <li>Backend Platform: Django</li>
+                        <li>Mobile application: Java</li>
+                        <li>Javascript Runtime Environment: Node.js</li>
+                        <li>Programming Language: Python Version 3</li>
+                     </ul>
+                     <li>Hardware Components (Mobile)</li>
+                     <ul style="list-style: circle;">
+                        <li>Not Applicable (N/A)</li>
+                     </ul>
+                </ul>
+            </div>
+
+            <div id="subpoint2-5" class="subpoint2-5">
+                <h2>2.5 Design and Implementation Constraints</h2>
+                <ul style="list-style: disc;">
+                    <li>Must use a framework for the back-end development mainly (Django/Laravel)</li>
+                    <li>Raw for the development of the whole system is prohibited</li>
+                    <li>Must use native frameworks for the mobile app development</li>
+                    <li>Free to use any external API to simply a tasks</li>
+                    <li>Apply Unit Tests</li>
+                    <li>Suggested Languages: PHP, Python</li>
+                    <li>Version Control: Git </li>
+                    <li>Suggester Search Engine Software Library: Apache Lucene</li>
+                    <li>Must use MySQL Database</li>
+                    <li>Use of Firebase is prohibited</li>
+                </ul>
+            </div>
+
+            <div id="subpoint2-6" class="subpoint2-6">
+                <h2>2.6 User Documentation</h2>
+                <p>Spitrack is a web based research platform for researchers where they can 
+                    simplify their content by performing their research only within some specified 
+                    boundary of content. Research is mostly based on URLs today as most of the contents
+                    are available on the internet. Web search engines will provide you with a lot of content
+                    that you might not need for your research. Spitrack gives you the facility to search over a set of
+                    links that you prefer. In addition, it also collects all the PDF files or Word Files or any other textual 
+                    files within the link and gives the opportunity to do your research on authentic content found with the cluster of 
+                    links that you provide. Last but not the least, you also have the ability to download that file from where you have done your research. 
+                </p>
+            </div> 
+
+            <div id="subpoint2-7" class="subpoint2-7">
+                <h2>2.7 Assumptions and Dependencies</h2>
+                    <p>Assuming that we are considering all the constraints and operating environments
+                        to be positive, our web-application also requires some more dependencies on
+                        external factors.</p>
+                    <p>The external dependencies for Django include:</p>
+                    <ul style="list-style:disc;">
+                        <li>Django REST framework for API development </li>
+                        <li>Django Cors Header for React Connectivity</li>
+                        <li>MySQLCLient for the MySQL database Connectivity</li>
+                    </ul>
+                    <p>The external dependencies for React include:</p>
+                    <ul style="list-style:disc;">
+                        <li>Bootstrap 5</li>
+                            <li>React-Router-Dom Module to traverse the DOM</li>
+                    </ul>
+                    <p>The above dependencies are essential to make the web-app completely
+                        functional, others web-apps will not perform well and a lot of bugs will be
+                        observed just because of the dependencies.
+                    </p>
+            </div>
+               
+        </div>
+        
+        <div id=point-3 class = point>
+            <h1>3. External Interface Requirements</h1>
+            <div id="subpoint3-1" class="subpoint3-1">
+                <h2>3.1 User Interfaces</h2>
+                <p>The software interfaces for both the web-app and mobile app
+                    are required to follow the Model-View-Controller model for the 
+                    acceptance of an action by the user, model data on the database 
+                    and rendering the retrieved data on the user terminal. The front-end
+                    interface should be able to send HTTP requests to the back-end interface
+                    to perform some CRUD operations on the database through RESTful APIs. 
+                </p>
+                <p>The user interfaces can be divided into the following panels:</p>
+                <ul style="list-style:lower-roman;">
+                    <li>User Panel </li>
+                    <li>Admin Panel</li>
+                </ul>
+                <p> The user panel mainly shows the user dashboard tab, cluster formation tab,
+                    search tab and the profile tab. The dashboard shows all the recent searches 
+                    and clusters formed by the user. Through the dashboard users can perform their
+                    previous searches and access the premade-clusters. Using the cluster formation
+                    tab the users can create new clusters by providing some URLs and select the
+                    crawling strategy of their choice along with a particular depth up to which
+                    the data needs to be scrapped. The profile tab shows the basic information
+                    of an individual user. The search tab allows the user to select a premade
+                    cluster and perform a search within that cluster using a search field. Once
+                    a search operation is complete, all the optimal results are displayed on the
+                    screen below the search field. 
+                </p>
+                
+                <h3>User Dashboard</h3>
+                <img src="https://i.ibb.co/WvDGfhm/User-Dashboard.jpg" alt="User-Dashboard" border="2" width = 100% height = 75%>
+                <h3>User Cluster Create</h3>
+                <img src="https://i.ibb.co/LNGMjpq/User-Clusters-Create.jpg" alt="User-Clusters-Create" border="2" width = 100% height = 75%>
+                <h3>User Clusters</h3>
+                <img src="https://i.ibb.co/R34PPYF/User-Clusters.jpg" alt="User-Clusters" border="2" width = 100% height = 75%>
+                <h3>User Cluster Search</h3>
+                <img src="https://i.ibb.co/y8qqkh2/User-Search.jpg" alt="User-Search" border="2" width = 100% height = 75%>
+                <h3>User Cluster Profile</h3>
+                <img src="https://i.ibb.co/7G60sQ7/User-Profile.jpg" alt="User-Profile" border="2" width = 100% height = 75%> 
+                    
+                <p>The admin panel has the admin dashboard tab, install plug-in tab, installed 
+                    plug-in tab and the profile tab. The admin dashboard will show the recently installed
+                    crawling strategies and provide some suggestions about new plug-ins available. The install
+                    plug-in tab will show all the available plugins that an admin can install for its system. The
+                    installed plug-in tab allows the admin to see the installed plugins on its system and make those 
+                    plugins active or inactive for its users.
+                </p>
+            </div>
+            <div id="subpoint3-2" class="subpoint3-2">
+                <h2>3.2 Hardware Interfaces</h2>
+                <p>Not Applicable(NA)</p>
+            </div>
+            <div id="subpoint3-3" class="subpoint3-3">
+                <h2>3.3 Software Interfaces</h2>
+                <p>This product is built on the basis of python framework “Django” and the front-end is completely 
+                    developed on Javascript based library React. Database used in this product is Apache XAMPP MySQL 
+                    database which is further integrated with the Django ORM to simplify the CRUD operations over the database. 
+                </p>
+                <p>
+                    For the communication between the front-end and back-end of the web app we are using the REST API. For the 
+                    integration of the REST APIs into the system we have used the django rest frameworks. Furthermore, to accept 
+                    the HTTP requests from the React application we are also using the django cors headers.
+                </p>
+            </div>
+            <div id="subpoint3-4" class="subpoint3-4">
+                <h2>3.4 Communications Interfaces</h2>
+                <p>
+                    The system requires a user to be registered into the database through email sign up or directly 
+                    through Google Sign In. The data obtained will be used for the authentication processes for the 
+                    HTTP requests through the APIs in the system. The Web application can run in any modern browser 
+                    like Chrome, Firefox and Microsoft Edge.
+                </p>
+            </div>
+        </div>
+        
+        <div id=point-4 class = point>
+            <h1>4. System Features</h1>
+            <p>This section has all the possible system features for Spitrack Version 1.0. The basics of the feature 
+                requirements are included in this part, and it might be changed based on the updates in the later version.
+            </p>
+            <div id="subpoint4-1" class="subpoint4-1">
+                <h2>4.1 User Sign Up With or Without Google Authentication</h2>
+                <p>
+                    A new user to the system, enters his or her details, and creates 
+                    a new user account on the system. He or she is given a new user ID. 
+                    New users can also sign up into the system with their Google account
+                    directly.
+                </p>
+                <h3>4.1.1 Description and Priority</h3>
+                <p>
+                    This feature is for the new users of this system. 
+                    To sign up into the system a new user needs to insert
+                     his/her first name and last name, email and a password
+                     of their choice. Once their new account is created their 
+                     details will be saved in the server and they will get 
+                     direct access into their dashboard. Just in case a user 
+                     wants to go for a faster sign up he/she can use the “Log In 
+                     with Google” option to create his new account and “sign in” 
+                     into his/her dashboard after his Google Account has been 
+                     authenticated. This feature has a priority level of 9. The 
+                     benefit of this feature is that no unauthenticated user can 
+                     access the system, and users of this system will be safe from 
+                     theft. Without an account a user will not be able to access the 
+                     system.
+                </p>
+                <h3>4.1.2  	Stimulus/Response Sequences</h3>
+                <p>Sign Up without Google</p>
+                <ul>
+                    <li>User goes to sign up page</li>
+                    <li>Enter his/her details (first name, last name, email and password)</li>
+                    <li>Submit the form </li>
+                    <li>New User account is created</li>
+                    <li>User is directed to his/her dashboard</li>
+                </ul>
+                <h3>4.1.3 Functional Requirements</h3>
+                <p>REQ-1: A database is required on the server side to store all 
+                    the information of a new user. If no database is created prior 
+                    to any sign up form submission the system will send an error of 
+                    “New Account could not be created due to server issues!”
+                </p>
+                <p>
+                    REQ-2: All the input fields need to be filled completely before 
+                    the form is submitted.
+                </p>
+            </div>
+
+            <div id="subpoint4-2" class="subpoint4-2">
+                <h2>4.2 Create Cluster of URLS or COUs</h2>
+                <p>An existing user creates a URL cluster by inserting the URLs of 
+                    his/her choice and applies some crawling strategies already 
+                    available on the system for the new cluster. Along with this 
+                    they also set the depth of the URL level up to which they want 
+                    to search and press the “Create Cluster Button”.
+                </p>
+                <h3>4.2.1 Description and Priority</h3>
+                <p>This feature allows an existing user who already has an account 
+                    on the system to create a new COU. The COU is easy to create. 
+                    The user needs to insert the main or root URLs on which they 
+                    want to make their research. Up next they have to select some 
+                    crawling strategy available on the system like “PDFs, TXT, MS 
+                    Word” etc., basically the files that they want to search for 
+                    in the links. Last but not the least, they need to provide the 
+                    level of depth into the URLs up to which they want to search for
+                    the files they require based on the crawling strategies selected.
+                </p>
+                <h3>4.2.2 Stimulus/Response Sequences</h3>
+                <ul>
+                    <li>User goes in the clusters tab on the side navigation bar</li>
+                    <li>The “Cluster site” clicks on the “Create Cluster Button”, which will take them to the create cluster page</li>
+                    <li>Users enter the URLs on which they want to do their research. Number of links is limited to 5.</li>
+                    <li>User selects the crawling strategy of their choice based on their requirement using the checkbox options</li>
+                    <li>User enters a depth for the crawl within the URLs provided. Maximum depth can be 10.</li>
+                    <li>User clicks on “Create Cluster” to make the new COU</li>
+                    <li>The system then shows a message “You will be notified through email when the cluster is ready”</li>
+                </ul>
+                <h3>4.2.3 Functional Requirements</h3>
+                <p>REQ-1: Database needs to be ready for indexing of content</p>
+                <p>REQ-2: Web Crawling and Web Scraper libraries are required for data crawling and indexing.</p>
+            </div>
+            <div id="subpoint4-3" class="subpoint4-3">
+                <h2>4.3 View or Delete clusters already created</h2>
+                <p>An existing user of this system can view his/her created clusters.</p>
+                <h3>4.3.1 Description and Priority</h3>
+                <p>
+                    This feature allows the user to view the clusters they have already 
+                    created and also gives them the option to delete a cluster out of 
+                    the ones that are already available.
+                </p>
+
+                <h3>4.3.2 Stimulus/Response Sequences</h3>
+                <ul>
+                    <li>User goes on the “Clusters Tab”</li>
+                    <li>All the clusters are shown on screen along with the URLs, crawling strategies and depth</li>
+                    <li>User can delete a cluster by just clicking the delete button below an individual cluster</li>
+                    <li>If user clicks on delete button</li>
+                    <li>System removes the cluster from the clusters tab</li>
+                    <li>System removes the data related to the deleted cluster from the server database</li>
+                </ul>
+                
+                <h3>4.3.3 Functional Requirements</h3>
+                <p>REQ-1: Database should be automated through the ORM to perform required migrations</p>
+            </div>
+            <div id="subpoint4-4" class="subpoint4-4">
+                <h2>4.4 Perform Search Operation</h2>
+                <p>Existing Users can perform a search over the clusters that they have created. 
+                    A search can be done easily by typing the keywords in the “Search Box” and 
+                    selecting the COUs and last pressing the search button.
+                </p>
+
+                <h3>4.4.1 Description and Priority</h3>
+                <p>This feature allows the user to perform some specific search on 
+                    the COUs that they have created. They can perform the search 
+                    over the COUs by inserting their required keywords in the search 
+                    field, select the COU on which the search needs to be done. Once 
+                    the user clicks on the search button, a set of possible results 
+                    are shown below the search bar. Each search result shows the 
+                    link where the keyword is found along with its root link and 
+                    parent link with their respective depths. Once the results are 
+                    available the user can directly download the file from the URL 
+                    or access the page if any.
+                </p>
+
+                <h3>4.4.2 Stimulus/Response Sequences</h3>
+                <ul>
+                    <li>User inputs the keywords in the search box</li>
+                    <li>User selects the COU</li>
+                    <li>User clicks on search button</li>
+                    <li>System provides all possible results</li>
+                </ul>
+
+                <h3>4.4.3 Functional Requirements</h3>
+                <p>REQ-1: At Least one COU needs to be created before any search</p>
+                <p>REQ-2: Database in the server needs to be online to perform the search</p>
+            </div>
+            <div id="subpoint4-5" class="subpoint4-5">
+                <h2>4.5 Add New Crawling Strategy through Plug-In</h2>
+                <p>Admins will be able install a crawling strategy though plugin.</p>
+
+                <h3>4.5.1 Description and Priority</h3>
+                <p>Admins will be able to add “install” a new crawling strategy 
+                    into the system from the available plugins in the “Install Plugin Page”. 
+                    Admin can move into the “Install Plug In Page” and install a crawling strategy 
+                    plugin. Later on he/she moves into the installed Plugins tab, and then they 
+                    have the option to either activate or deactivate the installed plugin. 
+                    If the plugin is deactivated the users of this system will not be able 
+                    to use that crawling strategy plug in.
+                </p>
+
+                <h3>4.5.2 Stimulus/Response Sequences</h3>
+                <ul>
+                    <li>Admin goes to the “Install Plugin” page</li>
+                    <li>Selects a plugin of their choice and clicks on Install</li>
+                    <li>The system installs the plugin</li>
+                    <li>Admin is taken automatically to the “Installed plugin tab”</li>
+                    <li>Admin selects “Activate Plugin” or “Deactivate Plugin” accordingly.</li>
+                </ul>
+
+                <h3>4.5.3 Functional Requirements</h3>
+                <p>REQ-1: Admin account needs to be created</p>
+                <p>REQ-2: Plugins must be available in the “Plugins Page”</p>
+                <p>REQ-3: Admin must be authorized</p>
+            </div>
+        </div>
+
+        <div id=point-5 class = point>
+            <h1>5. Other Non-Functional Requirements</h1>
+            <div id="subpoint5-1" class="subpoint5-1">
+                <h2>5.1 Performance Requirements</h2>
+                <ul style="list-style: disc;">
+                    <li><b>Response Time</b></li>  
+                    <p>User sign up, sign in will be done in real time. Formation of
+                         COU may take time depending on the number of URLs and maximum
+                          depth to traverse. Selection of the cluster  and searching
+                           within it will be done in real time.
+                    </p>
+                    <li><b>Workload</b></li> 
+                    <p>This system should be able to make at least a cluster of 5 urls.
+                    </p>
+                    <li><b>Usability</b></li> 
+                    <p>The system will be able to satisfy a maximum number of customers
+                         needs.
+                    </p>
+                    <li><b>Platform</b></li> 
+                    <p>Please refer to the section 2.4 (Operating Environment)
+                    </p>
+                </ul>
+            </div>
+            <div id="subpoint5-2" class="subpoint5-2"></div>
+                <h2>5.2 Safety Requirements</h2>
+                <p>System failure, login issues, account creation, password reset and 
+                    cluster failure will cause damage to the system. A backup system will
+                     be there for system failure which will be in archival storage. 
+                     Information transmission should be securely transmitted to the server
+                      without any changes in information.
+                </p>
+            <div id="subpoint5-3" class="subpoint5-3">
+                <h2>5.3 Security Requirements</h2>
+                <p>Security requirements includes authentication, authorization,
+                    data protection and so on . Authentication ensures that each
+                    entity involved in using the service the requestor, the provider,
+                    and the broker is what it actually claims to be. Authorization 
+                    determines whether the service provider has granted access to the
+                    Web service to the requestor. Data protection ensures that the 
+                    Web service request and response have not been tampered with en 
+                    route. The main security concern is for users account hence 
+                    proper login mechanism should be used to avoid hacking. The 
+                    tablet id registration is way to spam check for increasing the 
+                    security. Hence, security is provided from unwanted use of 
+                    recognition software.
+                 </p>
+            </div>
+            <div id="subpoint5-4" class="subpoint5-4">
+                <h2>5.4 Software Quality Attributes</h2>
+                <ul style="list-style: disc;">
+                    <li><b>Availability</b></li>
+                    <p>
+                        The System should be available on the specified date and specified
+                        time when many are required to use the product. 
+                    </p>
+                    <li><b>Correctness</b></li>
+                    <p>
+                        The important aspects to consider in some environments are the professionalism
+                        and effectiveness of the website that could be measured through how many different 
+                        platforms are supported and it supports adaptivity and adaptability for a personalization. 
+                    </p>
+                    <li><b>Maintainability</b></li>
+                    <p>
+                        Admins will maintain the plugins and speed with which the system can be
+                        restored to operational status after a failure occurs. 
+                    </p>
+                    <li><b>Usability</b></li>
+                    <p>
+                        The system will be able to satisfy a maximum number of customers' needs. 
+                    </p>
+                    <li><b>Reliability</b></li>
+                    <p>
+                        The system will be aware of bias,look for clusters with expertise, check
+                        the data ,avoid errors and give maximum depth to crawl. 
+                    </p>    
+                </ul>
+            </div>
+            <div id="subpoint5-5" class="subpoint5-5">
+                <h2>5.5 Business Rules</h2>
+                <p>Not Applicable (NA)</p>
+            </div>
+        </div>
+
+        <div id=point-6 class = point>
+            <h1>6. Other Requirements</h1>
+                <p>Not Applicable (NA)</p> 
+        </div>
+
+        <div id=appendix-a class = point>
+            <h1>Appendix A: Glossary</h1>
+            <div id="subpoint-1" class="subpoint1-1"></div>
+            <ul style="list-style: disc;">
+                <li>ORM (Object Relational Mapping): Object-relational mapping (ORM) is a 
+                    mechanism that makes it possible to address, access and manipulate objects 
+                    without having to consider how those objects relate to their data sources.
+                </li><br>
+                <li>DBMS (Database Management System): Database management system will store, 
+                    retrieve, define, and manage data in a database.
+                </li><br>
+                <li>API (Application Programming Interface): Application programming Interface 
+                    is a software intermediary that allows two applications to talk to each other.
+                </li><br>
+                <li>REST (Representational State Transfer): A RESTful API is an architectural 
+                    style for an application program interface (API) that uses HTTP requests to 
+                    access and use data.
+                </li><br>
+                <li>SRS (Software Requirements Specification): A software requirements specification 
+                    (SRS) is a document that describes what the software will do and how it will be 
+                    expected to perform. It also describes the functionality the product needs to 
+                    fulfill all stakeholders (business, users) needs.
+                </li><br>
+                <li>REACT (Front-End Javascript Library): REST is a JavaScript library for building
+                     user interfaces
+                </li><br>
+                <li>DJANGO (Back-End Python Framework): Django is an advanced Web framework written 
+                    in Python that makes use of the model view controller (MVC) architectural pattern.
+                </li><br>
+                <li>SQL (Structured Query Language): SQL (Structured Query Language) is a standardized 
+                    programming language that's used to manage relational database
+                </li><br>
+                <li>COU (Cluster of URLs): Cluster of URLs is a list of URLs in which the list will
+                     be provided by the user.
+                </li><br>
+                <li>WCS (Web Crawling Strategy): Web crawling is the process of indexing data on 
+                    web pages by using a program or automated script. 
+                </li><br>
+                <li>PII (Plugin Installer): Plugin Installer adds new functions to a host program 
+                    without altering the host program itself.
+                </li><br>
+                <li>DOM (Document Object Model): Document Object Model is a platform and 
+                    language-neutral interface that allows programs and scripts to dynamically 
+                    access and update the content, structure, and style of a document.
+                </li><br>
+                <li>CRUD (Create Read Update and Delete): CRUD is an acronym that refers to 
+                    the four functions that are considered necessary to implement a persistent 
+                    storage application: create, read, update and delete.
+                </li>
+            </ul>
+        </div>
+
+        <div id=appendix-b class = point>
+            <h1>Appendix B: Analysis Models</h1>
+            <div id="subpoint-1" class="subpoint1-1">
+                <h3>Use case diagram:</h3>
+                <img src="https://i.ibb.co/85ykkrM/CSE327-UML-Use-Case.jpg" alt="CSE327-UML-Use-Case" width="550" height="700">
+            </div>
+        </div>
+
+        <div id=appendix-c class = point>
+            <h1>Appendix C: To Be Determined List</h1>
+            <div id="subpoint-1" class="subpoint1-1">
+                <ul style="list-style: disc;">
+                    <li>To add new WCS as plugins
+                    </li><br>
+                    <li>User documentation to create plugins
+                    </li><br>
+                    <li>Admin authentication 
+                    </li><br>
+                    <li>Generating Admin ID
+                    </li><br>
+                    <li>Entity-relationship diagrams
+                    </li><br>
+                    <li>Include voice command search in mobile apps.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="window.print();" class="float hidden-print">
+        <i class="fa fa-plus my-float">Print</i>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Navbar */
+
+.nav-body{
+    background-color: #00A8FF;
+    width: 100%;
+    
+}
+
+.branding{
+    margin-left: 20%;
+    text-decoration: none;
+    color: white;
+    padding-top: 20;
+}
+
+
+.links{
+    margin-left: -700%;
+}
+
+
+
+/*Sign In Form*/
+
+.form-box{
+
+    width: 40%;
+    border-radius: 10px;
+    border: 2px solid #00A8FF;
+    padding: 5%;
+    margin: 10%;
+    margin-top: 5%;
+    
+}
+
+.form-head{
+    margin-left: 42%;
+    font-size: 30px;
+    padding-bottom: 20px;;
+}
+
+.form-group label, .form-group input{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.submit{
+    margin-top: 15px;
+    background-color: #00A8FF;
+    border-radius: 5px;
+    border-color: #00A8FF;
+    border-style: none;
+    color: white;
+    padding: 10px 20px;
+
+}

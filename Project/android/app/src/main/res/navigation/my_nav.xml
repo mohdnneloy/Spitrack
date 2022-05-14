@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dashboard">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.myapplication.Dashboard"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard1" />
+    <fragment
+        android:id="@+id/clusters2"
+        android:name="com.example.myapplication.Clusters"
+        android:label="Clusters"
+        tools:layout="@layout/fragment_clusters" />
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.example.myapplication.Search"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+</navigation>
