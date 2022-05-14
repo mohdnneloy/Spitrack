@@ -122,11 +122,11 @@ DATABASES = {
 
     # 'default': {
     #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'spitrack',
-    #     'USER': 'admin',
-    #     'PASSWORD': 'NeloyRafidWahab11',
-    #     'HOST': 'database.cs263ypewcsv.us-east-1.rds.amazonaws.com',
-    #     'PORT': '3306',
+    #     'NAME': 'database_name',
+    #     'USER': 'user',
+    #     'PASSWORD': 'password',
+    #     'HOST': 'host',
+    #     'PORT': 'port',
     # }
 }
 
